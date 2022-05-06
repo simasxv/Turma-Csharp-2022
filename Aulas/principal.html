@@ -11,10 +11,74 @@
         <img src="img/logo2.jpg" width="250px">
         <nav>
             <a href="menu.html">Menu</a>
-            <a href="restaurantes.html">Restaurantes</a>
+            <a href="cadastro.html">Cadastro</a>
             <a href="servicos">Outros Serviços</a>
             <a href="contato.html">Contato</a>
         </nav>
     </center>
+    <br>
+    <center>
+        <h1>Testes aula html</h1>
+    </center>
+    <br>
+
+    <center>
+        <form action="enviaemail.cs" id="cadastroPessoa" class="cadastroPessoa" method="get" enctype="multipart/form-data">
+
+            
+            <label>Nome:</label>    
+            <input type="text" name="nome" value="Gabriel" placeholder="Nome completo" >
+            
+            <label>E-mail:</label>
+            <input type="email" name="email" value="gabrielsimao010@gmail.com" required>
     
-</html>
+            <select name="estados" >
+                <option value="">Selecione o estado</option>
+                <option value="SC" selected>Santa Catarina</option>
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                
+            </select>
+            
+            <label>Data:</label>
+            <input type="datetime-local" name="data">
+            
+            <label>Sexo:</label>
+            <span>
+                
+                <input type="radio" name="sexo" checked value="M">Masculino
+                <input type="radio" name="sexo" value="F"> Feminino
+                <br></br>
+                
+                
+            </span>
+            
+            <label>Comidas:</label>
+            <input type="checkbox" name="comida" checked value="Lasanha">Lasanha
+            <input type="checkbox" name="comida" value="Pizza">Pizza
+            <input type="checkbox" name="comida" checked value="arroz">arroz
+            <input type="checkbox" name="comida" value="Feijão">Feijão
+            
+            
+            <label>Senha:</label>
+            <input type="password" name="senha" minlength="8" maxlength="12">
+            
+            <label>Foto:</label>
+            <input type="file" name="foto" multiple>
+            <textarea name="mensagem" id="" cols="40" rows="05" required></textarea>
+
+
+            <button type="submit">Enviar</button>
+            <input type="reset" name="enviar" value="limpar">
+
+
+
+            
+            <input type="hidden" name="codigoIbge" value="129332">
+        </form>
+        </center>
+        
+        
+        
+    </body>
+    </html>
