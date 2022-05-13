@@ -3,8 +3,10 @@ html, body{
     margin: 0;
     padding: 0;
 }
+
 *{
     font-family: 'Roboto', sans-serif;
+    
 }
 nav{
     position: absolute;
@@ -49,6 +51,10 @@ main{
     box-shadow: -2px -1px 6px 2px rgba(0,0,0,0.6);
     padding: 15px;
     display: inline-block;
+    float: right;
+    height: 220px;
+    min-height: 210px;
+    
     
 }
 .homeArticle img{
@@ -71,12 +77,15 @@ main{
     display: inline-block;
     width: auto;
     padding: 4px;
-    background: rgb(15, 3, 3);
+    background: rgb(15, 3, 3);  
     border-radius: 5px;
     color: #fff;
     text-decoration: none;
-    float: right;
     transition: 0.50s padding ease-out, 0.50s border-radius ease-out, 0.50 border ease-out;
+    position: relative;
+    left: 0;
+    text-align: center;
+    bottom: 2px;
 
 }
 .homeArticle a:hover{
@@ -84,4 +93,17 @@ main{
     padding: 6px;
     transition: 0.50s padding ease-out, 0.50s margin eade-out, 0.50s border-radius ease-out
 
+}
+/*estilos carrosel*/
+.caroulsel{
+    width: 100%;
+    background:rgb(255, 255, 255);
+    display: inline-block;
+    margin: 1%;
+}
+.caroulsel li{
+    list-style: none;
+    overflow: hidden;
+    float: left;
+    margin: 5px;
 }
